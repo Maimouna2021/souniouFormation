@@ -9,5 +9,5 @@ class formation extends Model
 {
     use HasFactory;
     //protected $guard = ['matricul'];
-    protected $filable = ['titre','resume','description','dateDemarrage'];
+    protected $filable = ['titre','resume','description'];
 }

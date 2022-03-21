@@ -8,7 +8,9 @@ use App\Http\Controllers\FormationController;
 
 Route::get('/', function () {
     $formation = Formation::all(); 
-    return view('welcome');
+    return view('welcome',[
+        'formation' => $formation
+    ]);
 });
 
 Route::get('/formations', [FormationController::class,'index']);
