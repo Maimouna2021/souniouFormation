@@ -21,12 +21,12 @@
         </style>
     </head>
     <body class="antialiased">
-    <ul>
-    @foreach($formation as $f)
-    <li>{{$f->titre}}</li>
-    <li>{{$f->resume}}</li>
-    <li>{{$f->description}}</li>
-      @endforeach
-    </ul>
+            <ul>
+            @foreach($formation as $f)
+            <li>{{$f->titre}}</li>
+            <li>{{$f->resume}}</li>
+            <li>{{$f->description}}</li>
+            @endforeach
+            </ul>
     </body>
 </html>
